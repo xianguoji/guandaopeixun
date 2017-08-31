@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>联系我们-观道美术培训</title>
+    <meta name="baidu-site-verification" content="观道美术培训"/>
+    <meta name="description" content="观道美术培训—艺术教育机构"/>
+    <meta name="keywords" content="观道美术培训—艺术教育，国画"/>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
+
+
+    <!--地图 -->
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=GW0UPwBKw1aCl983mr4WFLCcBn8u18Az&s=1" type="text/javascript" charset="utf-8"></script>
+    <!--地图 -->
+    <script type="text/javascript" src="javascript/jquery-1.11.3.min.js"></script>
+    <!--<script type="text/javascript" src="javascript/jquery.touchSlider.js"></script>-->
+    <script type="text/javascript" src="javascript/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="index.html" class="navbar-brand">观道美术培训</a>
+            <a data-toggle="collapse" class="navbar-toggle" href="#my-nb-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+
+        <div id="my-nb-collapse" class="collapse navbar-collapse navbar-right">
+            <ul id="nav" class="nav navbar-nav ">
+                <li><a  class="active" href="index.html">关于我们</a></li>
+                <li><a href="show.html">观道美术培训动态</a></li>
+                <li><a href="">价值聚焦</a></li>
+                <li><a href="callUs.html">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="baiduMap" style="width:100%;margin-top: 51px;"></div>
+<script>
+
+
+
+    var map = new BMap.Map("baiduMap");
+    map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+    map.addControl(new BMap.NavigationControl());   //添加左上地图缩放控件
+//        map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+
+    var point = new BMap.Point(113.305679,23.104074);//定位
+    map.centerAndZoom(point,15);//将point移到浏览器中心，并且地图大小调整为15;
+    var marker = new BMap.Marker(point);// 创建标注
+    map.addOverlay(marker);// 将标注添加到地图中
+    marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+
+    var opts = {
+        width : 200,     // 信息窗口宽度
+        height: 50,     // 信息窗口高度
+        title : "Hello"  // 信息窗口标题
+    }
+    var infoWindow = new BMap.InfoWindow("World", opts);  // 创建信息窗口对象
+    marker.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+    marker.addEventListener("click",function(){
+        //点击标注后的事件
+        marker.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+    });
+
+</script>
+
+
+
+<div class="container linian-con" style="margin-bottom: 100px;">
+    <div class="title-comm">
+        <h3 class="welinain">联系我们</h3>
+        <p class="line"></p>
+        <p class="linh25">xx，xxxxxxxxxxxx教育领域</p>
+    </div>
+    <div class="row">
+
+        <div class="col-sm-4">
+            <div class="col-div box">
+                <h4>联系客服</h4>
+                <div class="f12">电话：400-123
+                    </div>
+                <div class="f12" style="margin-top: 2px;">
+                    邮箱：123@qq.com
+                    工作时间：09：00~18：00（周一到周日）</div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="col-div box">
+                <h4>商务合作</h4>
+                <div class="f12">联系人：冼老师</div>
+                <div class="f12" style="margin-top: 2px;">电话：1234567</div>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="col-div box">
+                <h4>培训地址</h4>
+                <div class="f12">xxxxxxxxxxxxxxxxxx</div>
+                <div class="f12" style="margin-top: 2px;">
+                    邮编：610017
+                    传真：028-83226095</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<style>
+
+</style>
+
+<footer>
+    <div class="container">
+        <div class="row footer-nav">
+            <a href="">观道美术培训动态</a> |
+            <a href="">加入我们</a> |
+            <a href="">企业用户</a> |
+            <a href="" class="">用户使用协议</a>
+            <div class="">Copyright &copy; 2017 观道美术培训 粤ICP备15025302号-1</div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+
+
+</html>

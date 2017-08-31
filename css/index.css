@@ -1,0 +1,394 @@
+
+body{
+    font-family: 'microsoft yahei', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*banner-image*/
+#banner .banner-item:nth-child(1) .banner-img {
+    background-image: url(../banner/img/about-us-banner.jpg);
+}
+
+#banner .banner-item:nth-child(2) .banner-img {
+    background-image: url(../banner/img/about-us-banner-2.jpg);
+}
+
+/*banner-image */
+
+.team_main_visual{
+    display:none;
+}
+@media (min-width: 650px) and (max-width: 767px) {
+    div.flicking_con {
+        margin-top: 23%;
+    }
+}
+@media (min-width: 600px) and (max-width: 650px) {
+    div.flicking_con {
+        margin-top: 20%;
+    }
+}
+@media (min-width: 500px) and (max-width: 600px) {
+    div.flicking_con {
+        margin-top: 18%;
+    }
+}
+@media (min-width: 400px) and (max-width: 500px) {
+    div.flicking_con {
+        margin-top: 10%;
+    }
+}
+
+/*--------------*/
+@media(max-width: 992px) and (min-width: 768px) {
+    .col-md-8 {
+        width: 66.8%;
+        float: left;
+    }
+
+}
+ @media (max-width: 992px) and (min-width: 768px) {
+        .col-md-4 {
+            width: 32.333333%;
+            float: left;
+        }
+
+    }
+
+
+/*----------------------------*/
+
+@media (min-width: 767px) {
+    .box{
+        height:250px;
+    }
+    #baiduMap{
+        height:500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-nav{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-div {
+        margin-bottom: 30px;
+    }
+    .teacher-info{
+        font-size: 8px;
+    }
+    .teacher{
+        font-size: 15px;
+    }
+    .leader-line{
+        margin: 8px auto;
+    }
+    .team_main_visual{
+        display:block;
+    }
+    .app-none{
+        display:none;
+    }
+    footer{
+        font-size: 12px;
+    }
+    .tuhuanyuanjing-info{
+        font-size: 13px;
+    }
+    #baiduMap{
+        height:250px;
+    }
+
+    #pubuliu{
+        text-align: center;
+    }
+
+}
+.team_textbox {
+    background-color: rgba(59, 190, 122,.85);
+    padding: 10px;
+    color:#fff;
+}
+.team_main_image {
+    overflow: hidden;
+    min-height: 187px;
+}
+div.flicking_con {
+    text-align: center;
+    /*margin: 0 0 0 0;*/
+    left: 0;
+    width: 100%;
+    height: 149px;
+}
+
+
+.linian-con div{
+    /*border:1px solid blue;*/
+}
+.title-comm{
+    margin-top:80px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.line {
+    border-top: 1px solid #3bbe7a;
+    width: 30px;
+    margin: 20px auto 40px;
+}
+.welinain {
+    text-align: center;
+    font-weight: normal;
+}
+.linh25 {
+    line-height: 25px;
+    text-align: center;
+    margin:20px;
+}
+.box{
+    background:#60c992;
+    text-align: center;
+    /*overflow: hidden;*/
+    color: rgba(255, 255, 255, .8);
+    border-radius: 2px;
+    padding: 18% 10%;
+}
+
+
+
+.i-item-con{
+    background-color: #eeefe9;
+    padding: 60px 0;
+}
+.i-item-con-div{
+    width:100%;
+    text-align: center;
+    background:#fff;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    bottom: 0;
+
+}
+.i-item-con-text{
+    color: #aaa;
+    margin-top: 5px;
+}
+
+.team-person {
+    position: relative;
+    margin:20px;
+}
+
+.slideup_info p {
+    color: #333;
+    margin-bottom: 0;
+}
+
+.slideup_info {
+    color: #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+    padding:20px;
+}
+.col-sm-6:hover .slideup_info  {
+     opacity: 0.9;
+ }
+.col-sm-6:hover .i-item-con-div  {
+    opacity: 0;
+}
+
+.slideup_info_bg {
+    border: 4px solid #3bbe7a;
+    height: 100%;
+    padding:20px;
+    justify-content: center;
+}
+
+.leader-line{
+    border-top: 1px solid #3bbe7a;
+    width: 70px;
+    margin: 25px auto;
+}
+
+.teacher-info{
+    list-style: none;
+    padding:0;
+}
+/*--------*/
+.mb-describe {
+    background-color: rgba(59,190,122,.85);
+    padding: 0;
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mb-ibox {
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mb-ibox a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.mb-ibox a:first-child {
+    z-index: 6;
+}
+
+.mb-ibox a.move {
+    z-index: 7;
+}
+
+.mb-ibox a.cur {
+    z-index: 8;
+    position: relative;
+}
+
+
+.kePublic-rightdiv {
+    padding: 0 5%;
+    text-align: center;
+    margin-top:27%\9;
+}
+.tuandui-title {
+    font-size: 18px;
+    margin: 9% 0 5%;
+}
+/*团队轮播-index切换按钮*/
+.mb-inav-about {
+    z-index: 10 !important;
+    width: 210px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 4.5%;
+    /*padding-top: 4px;*/
+    list-style: none;
+    /*margin: 0 auto;*/
+    padding: 0px;
+}
+
+.mb-inav-about li {
+    float: left;
+}
+.mb-inav-about li div {
+    width: 40px;
+    height: 3px;
+    background-color: rgba(170,170,170,.5);
+    margin: 2px 10px 0 0;
+}
+
+.mb-inav-about li div.cur {
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 8px;
+    background-size: 40px 8px;
+    margin-top: -3px;
+    background-color:#3bbe7a;
+}
+
+/*团队banner，手机端轮播*/
+.team_main_visual {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.team_main_visual .flicking_con div.on {
+    display: block;
+}
+.team_main_image ul li {
+    width: 100%;
+    overflow: auto;
+}
+/*55555555*/
+
+.team_textbox>div{
+    display:none;
+}
+
+
+/*----footer-----*/
+.tuhuanyuanjing{
+    text-align: center;
+    color:#fff;
+    padding: 0 20px;
+}
+.tuhuanyuanjing-info{
+    line-height: 24px;
+}
+footer{
+    background-color: #666;
+    padding:1%;
+    color:#8F8F8F;
+    text-align: center;
+}
+.footer-nav>a{
+    color:#8F8F8F;
+    padding: 0 2px;
+}
+.footer-nav>a:hover{
+    color:#f9f2f4;
+}
+
+
+
+
+/*---------瀑布流----------*/
+.column {
+    display: inline-block;
+    vertical-align: top;
+}
+.pic_a {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-decoration: none;
+}
+.pic_a img {
+    display: block;
+    margin: 0 auto 5px;
+    border: 0;
+    vertical-align: bottom;
+}
+.pic_a strong {
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
